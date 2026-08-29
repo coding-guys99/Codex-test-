@@ -1,5 +1,5 @@
 import Link from 'next/link';
-import data from '@/data/opportunities.json';
+import data from '@/data/opportunities';
 
 const picks=data.filter((x:any)=>['AV & Broadcast','ICT','Electronics','Communications'].includes(x.industry)).slice(0,7);
 function Side(){return <aside className="sidebar"><div className="brand" style={{marginBottom:20}}>BORNEO / BUSINESS</div><Link className="sideitem active" href="/dashboard">Overview</Link><Link className="sideitem" href="/opportunities">Opportunities</Link><Link className="sideitem" href="/companies">Companies</Link><Link className="sideitem" href="/network">Network</Link><Link className="sideitem" href="/pipeline">Pipeline</Link></aside>}
